@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TeamWork Chat</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md p-6">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600" data-en="TeamWork Chat" data-ar="œ—œ‘… «·⁄„· «·Ã„«⁄Ì">TeamWork Chat</h1>
+      <nav class="space-x-6">
+        <a href="#features" data-en="Features" data-ar="«·„Ì“« " class="hover:text-indigo-500">Features</a>
+        <a href="#ai-smart" data-en="AI & Smart Home" data-ar="«·–ﬂ«¡ «·«’ÿ‰«⁄Ì Ê«·„‰“· «·–ﬂÌ" class="hover:text-indigo-500">AI & Smart Home</a>
+        <a href="#security" data-en="Security" data-ar="«·√„«‰" class="hover:text-indigo-500">Security</a>
+        <a href="#benefits" data-en="Why Us" data-ar="·„«–« ‰Õ‰" class="hover:text-indigo-500">Why Us</a>
+        <a href="#contact" data-en="Contact" data-ar=" Ê«’· „⁄‰«" class="hover:text-indigo-500">Contact</a>
+      </nav>
+      <button id="langToggle" class="ml-4 px-4 py-2 border border-indigo-600 text-indigo-600 rounded hover:bg-indigo-100">«·⁄—»Ì…</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 bg-gradient-to-br from-indigo-100 to-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-4" data-en="The Ultimate Chat App for Teams & Projects" data-ar="√›÷·  ÿ»Ìﬁ œ—œ‘… „Œ’’ ··›—ﬁ Ê«·„‘«—Ì⁄">The Ultimate Chat App for Teams & Projects</h2>
+      <p class="text-lg mb-8 text-gray-700" data-en="Chats, Calls, AI Tools & Smart Home Controls ó all in one secure workspace for developers, project managers, and connected teams." data-ar="«·œ—œ‘«  Ê«·„ﬂ«·„«  Ê√œÊ«  «·–ﬂ«¡ «·«’ÿ‰«⁄Ì Ê«· Õﬂ„ ›Ì «·„‰“· «·–ﬂÌ - ﬂ· –·ﬂ ›Ì „”«Õ… ⁄„· ¬„‰… Ê«Õœ… ··„ÿÊ—Ì‰ Ê„œÌ—Ì «·„‘«—Ì⁄ Ê«·›—ﬁ.">Chats, Calls, AI Tools & Smart Home Controls ó all in one secure workspace for developers, project managers, and connected teams.</p>
+      <a href="#contact" class="bg-indigo-600 text-white px-6 py-3 rounded-xl hover:bg-indigo-500 transition" data-en="Get Started" data-ar="«»œ√ «·¬‰">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-bold mb-10 text-center text-indigo-600" data-en="Core Features" data-ar="«·„Ì“«  «·√”«”Ì…">Core Features</h3>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-100 p-6 rounded-xl shadow-sm">
+          <h4 class="text-xl font-semibold mb-2" data-en="Group Chats" data-ar="«·œ—œ‘«  «·Ã„«⁄Ì…">Group Chats</h4>
+          <p data-en="Organize discussions by project, team, or department. Share files and updates in real time." data-ar="‰Ÿ¯„ «·‰ﬁ«‘«  Õ”» «·„‘—Ê⁄ √Ê «·›—Ìﬁ √Ê «·ﬁ”„. ‘«—ﬂ «·„·›«  Ê«· ÕœÌÀ«  ›Ì «·Êﬁ  «·›⁄·Ì."></p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-xl shadow-sm">
+          <h4 class="text-xl font-semibold mb-2" data-en="Private Messaging" data-ar="«·—”«∆· «·Œ«’…">Private Messaging</h4>
+          <p data-en="One-on-one secure chats with teammates and colleagues, enhanced with file and task sharing." data-ar="œ—œ‘«  ¬„‰… ›—œÌ… „⁄ «·“„·«¡° „⁄ ≈„ﬂ«‰Ì… „‘«—ﬂ… «·„·›«  Ê«·„Â«„."></p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-xl shadow-sm">
+          <h4 class="text-xl font-semibold mb-2" data-en="Video & Audio Calls" data-ar="„ﬂ«·„«  «·›ÌœÌÊ Ê«·’Ê ">Video & Audio Calls</h4>
+          <p data-en="High-quality, low-latency calls for fast team decisions ó without leaving the app." data-ar="„ﬂ«·„«  ⁄«·Ì… «·ÃÊœ… Ê„‰Œ›÷… «· √ŒÌ— ·« Œ«– ﬁ—«—«  ”—Ì⁄… œ«Œ· «·›—Ìﬁ ó œÊ‰ „€«œ—… «· ÿ»Ìﬁ."></p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-xl shadow-sm">
+          <h4 class="text-xl font-semibold mb-2" data-en="Project Workspaces" data-ar="„”«Õ«  «·⁄„· ··„‘«—Ì⁄">Project Workspaces</h4>
+          <p data-en="Create dedicated chat channels per project. Link tasks, deadlines, and code discussions." data-ar="√‰‘∆ ﬁ‰Ê«  œ—œ‘… „Œ’’… ·ﬂ· „‘—Ê⁄. «—»ÿ «·„Â«„ Ê«·„Ê«⁄Ìœ «·‰Â«∆Ì… Ê‰ﬁ«‘«  «·‘Ì›—…."></p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-xl shadow-sm">
+          <h4 class="text-xl font-semibold mb-2" data-en="AI Productivity Toolkit" data-ar="√œÊ«  «·–ﬂ«¡ «·«’ÿ‰«⁄Ì ··≈‰ «ÃÌ…">AI Productivity Toolkit</h4>
+          <p data-en="Generate tasks, summarize chats, write code, and brainstorm using built-in AI tools made for teams and developers." data-ar="√‰‘∆ «·„Â«„° Ê·Œ’ «·„Õ«œÀ« ° Ê«ﬂ » «·‘Ì›—…° Ê«» ﬂ— √›ﬂ«—« »«” Œœ«„ √œÊ«  «·–ﬂ«¡ «·«’ÿ‰«⁄Ì «·„œ„Ã…."></p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-xl shadow-sm">
+          <h4 class="text-xl font-semibold mb-2" data-en="Smart Home Integration" data-ar=" ﬂ«„· «·„‰“· «·–ﬂÌ">Smart Home Integration</h4>
+          <p data-en="Control lights, devices, thermostats, and more ó directly from your team chat." data-ar=" Õﬂ„ ›Ì «·√÷Ê«¡ Ê«·√ÃÂ“… Ê√ÃÂ“… «· ﬂÌÌ› Ê«·„“Ìœ ó „»«‘—… „‰ œ—œ‘… «·›—Ìﬁ."></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI & Smart Home -->
+  <section id="ai-smart" class="py-16 bg-gradient-to-br from-white to-indigo-50">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-10 text-indigo-700" data-en="Smart Collaboration with AI & Smart Home Control" data-ar=" ⁄«Ê‰ –ﬂÌ »«” Œœ«„ «·–ﬂ«¡ «·«’ÿ‰«⁄Ì Ê«· Õﬂ„ ›Ì «·„‰“· «·–ﬂÌ">Smart Collaboration with AI & Smart Home Control</h3>
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="bg-white p-6 rounded-xl shadow-lg">
+          <h4 class="text-xl font-semibold mb-3" data-en="AI Toolkit for Teams" data-ar="√œÊ«  «·–ﬂ«¡ «·«’ÿ‰«⁄Ì ··›—ﬁ">AI Toolkit for Teams</h4>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li data-en="Auto-summarize long chats or meetings" data-ar=" ·ŒÌ’  ·ﬁ«∆Ì ··œ—œ‘«  «·ÿÊÌ·… √Ê «·«Ã „«⁄« ">Auto-summarize long chats or meetings</li>
+            <li data-en="Generate to-do lists from messages" data-ar="≈‰‘«¡ ﬁÊ«∆„ «·„Â«„ „‰ «·—”«∆·">Generate to-do lists from messages</li>
+            <li data-en="Code help and task estimations for devs" data-ar="„”«⁄œ… ›Ì «·‘Ì›—… Ê ﬁœÌ— «·„Â«„ ··„ÿÊ—Ì‰">Code help and task estimations for devs</li>
+            <li data-en="Built-in GPT assistant per chat room" data-ar="„”«⁄œ –ﬂÌ „œ„Ã ·ﬂ· €—›… œ—œ‘…">Built-in GPT assistant per chat room</li>
+          </ul>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg">
+          <h4 class="text-xl font-semibold mb-3" data-en="Smart Home Management" data-ar="≈œ«—… «·„‰“· «·–ﬂÌ">Smart Home Management</h4>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li data-en="Control smart lights, locks, AC, and cameras" data-ar="«· Õﬂ„ ›Ì «·√÷Ê«¡ «·–ﬂÌ… Ê«·√ﬁ›«· Ê«· ﬂÌÌ› Ê«·ﬂ«„Ì—« ">Control smart lights, locks, AC, and cameras</li>
+            <li data-en="Set &quot;Work Mode&quot; to optimize your home office" data-ar=" ›⁄Ì· &quot;Ê÷⁄ «·⁄„·&quot; · Õ”Ì‰ »Ì∆… «·⁄„· ›Ì «·„‰“·">Set "Work Mode" to optimize your home office</li>
+            <li data-en="Voice assistant support and automation rules" data-ar="œ⁄„ «·„”«⁄œ «·’Ê Ì ÊﬁÊ«⁄œ «· ‘€Ì· «·¬·Ì">Voice assistant support and automation rules</li>
+            <li data-en="Multi-user access with permission control" data-ar="≈„ﬂ«‰Ì… «·Ê’Ê· «·„ ⁄œœ „⁄  Õﬂ„ ›Ì «·’·«ÕÌ« ">Multi-user access with permission control</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Contact -->
+  <section id="contact" class="py-16 bg-indigo-600 text-white text-center">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-bold mb-4" data-en="Ready to Transform Your Team Communication?" data-ar="Â· √‰  „” ⁄œ · ÕÊÌ·  Ê«’·ﬂ ›Ì «·›—Ìﬁø">Ready to Transform Your Team Communication?</h3>
+      <p class="mb-8" data-en="Try TeamWork Chat now and experience collaboration without chaos." data-ar="Ã—» TeamWork Chat «·¬‰ Ê«” „ ⁄ »«· ⁄«Ê‰ œÊ‰ ›Ê÷Ï.">Try TeamWork Chat now and experience collaboration without chaos.</p>
+      <a href="#" class="bg-white text-indigo-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition" data-en="Book a Demo" data-ar="«ÕÃ“ ⁄—÷«  Ê÷ÌÕÌ«">Book a Demo</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-6">
+    <p data-en="© 2025 TeamWork Chat. All rights reserved." data-ar="© 2025 œ—œ‘… «·⁄„· «·Ã„«⁄Ì. Ã„Ì⁄ «·ÕﬁÊﬁ „Õ›ÊŸ….">© 2025 TeamWork Chat. All rights reserved.</p>
+  </footer>
+
+  <!-- Language Toggle Script -->
+  <script>
+    const toggleBtn = document.getElementById('langToggle');
+    let currentLang = 'en';
+
+    function switchLanguage(lang) {
+      document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+      document.body.style.textAlign = (lang === 'ar') ? 'right' : 'left';
+
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.textContent = el.getAttribute(`data-${lang}`);
+      });
+
+      toggleBtn.textContent = (lang === 'ar') ? 'English' : '«·⁄—»Ì…';
+      currentLang = lang;
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      switchLanguage(currentLang === 'en' ? 'ar' : 'en');
+    });
+  </script>
+
+</body>
+</html>
