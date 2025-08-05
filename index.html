@@ -10,36 +10,18 @@
 
 <!-- Header -->
 <header class="bg-white shadow-md p-4 md:p-6">
-  <div class="container mx-auto flex items-center justify-between">
+  <div class="container mx-auto flex flex-wrap items-center justify-between">
     <img src="logo.png" alt="QuBit Chat Logo" class="h-10 w-10 md:h-12 md:w-12" />
-    <div class="mx-auto text-center hidden md:block">
+    <div class="mx-auto text-center">
       <h1 class="text-xl md:text-2xl font-bold text-indigo-600" data-en="QuBit-Chat" data-ar="كيوبيت-شات">QuBit-Chat</h1>
       <p class="text-sm text-gray-500" data-en="Team T-T Touch" data-ar="فريق تي-تي تاتش">Team T-T Touch</p>
     </div>
     <div class="flex items-center space-x-4">
       <button id="langToggle" class="px-4 py-2 border border-indigo-600 text-indigo-600 rounded hover:bg-indigo-100">العربية</button>
       <img src="addchat.png" alt="Add Chat" class="h-10 w-10 md:h-12 md:w-12" />
-      
-      <!-- Hamburger button visible on small screens -->
-      <button id="menuToggle" class="md:hidden flex flex-col justify-center items-center space-y-1 ml-4" aria-label="Toggle Menu">
-        <span class="block w-6 h-0.5 bg-indigo-600"></span>
-        <span class="block w-6 h-0.5 bg-indigo-600"></span>
-        <span class="block w-6 h-0.5 bg-indigo-600"></span>
-      </button>
     </div>
   </div>
-
-  <!-- Navigation menu -->
-  <nav id="mobileMenu" class="hidden md:hidden bg-white shadow-md mt-2 rounded-md max-w-xs mx-auto">
-    <a href="#features" class="block px-4 py-2 border-b border-gray-200 hover:bg-indigo-50" data-en="Features" data-ar="الميزات">Features</a>
-    <a href="#ai-smart" class="block px-4 py-2 border-b border-gray-200 hover:bg-indigo-50" data-en="AI & Smart Home" data-ar="الذكاء الاصطناعي والمنزل الذكي">AI & Smart Home</a>
-    <a href="#security" class="block px-4 py-2 border-b border-gray-200 hover:bg-indigo-50" data-en="Security" data-ar="الأمان">Security</a>
-    <a href="#benefits" class="block px-4 py-2 border-b border-gray-200 hover:bg-indigo-50" data-en="Why Us" data-ar="لماذا نحن">Why Us</a>
-    <a href="#contact" class="block px-4 py-2 hover:bg-indigo-50" data-en="Contact" data-ar="اتصل بنا">Contact</a>
-  </nav>
-
-  <!-- Desktop menu hidden on small screens -->
-  <nav class="hidden md:flex flex-wrap justify-center space-x-4 mt-4 rtl:space-x-reverse">
+  <nav class="flex flex-wrap justify-center space-x-4 mt-4 rtl:space-x-reverse">
     <a href="#features" class="hover:text-indigo-500 block py-2" data-en="Features" data-ar="الميزات">Features</a>
     <a href="#ai-smart" class="hover:text-indigo-500 block py-2" data-en="AI & Smart Home" data-ar="الذكاء الاصطناعي والمنزل الذكي">AI & Smart Home</a>
     <a href="#security" class="hover:text-indigo-500 block py-2" data-en="Security" data-ar="الأمان">Security</a>
@@ -48,32 +30,242 @@
   </nav>
 </header>
 
+<!-- Intellectual Property Section -->
+<section class="bg-indigo-50 py-10 px-4">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-xl md:text-2xl font-semibold text-indigo-700 mb-4" data-en="Quantum Identity Protocol - QIP" data-ar="بروتوكول الهوية الكمومية - QIP">Quantum Identity Protocol - QIP</h2>
+    <p class="text-gray-700 text-sm md:text-base leading-relaxed" data-en="QuBit-Chat is built upon the innovative Quantum Identity Protocol (QIP) and the groundbreaking Quantum-Resonance Secure Identity Model (QRSIM). Together, they form a novel and promising new approach to Quantum Identity Authentication (QIA), offering state-of-the-art security and identity verification in collaborative digital communication." data-ar="كيوبيت-شات مبني على بروتوكول الهوية الكمومية المبتكر (QIP) ونموذج الهوية الآمنة بالرنين الكمومي الرائد (QRSIM). معاً، يشكلان نهجًا جديدًا واعدًا للمصادقة على الهوية الكمومية (QIA)، مما يوفر أمانًا متقدمًا والتحقق من الهوية في التواصل الرقمي التعاوني.">QuBit-Chat is built upon the innovative <strong>Quantum Identity Protocol (QIP)</strong> and the groundbreaking <strong>Quantum-Resonance Secure Identity Model (QRSIM)</strong>. Together, they form a novel and promising new approach to <strong>Quantum Identity Authentication (QIA)</strong>, offering state-of-the-art security and identity verification in collaborative digital communication.</p>
+  </div>
+</section>
+
+<!-- Hero Section (Get Started Updated) -->
+<section class="text-center py-16 bg-gradient-to-br from-indigo-100 to-white px-4">
+  <h2 class="text-3xl font-bold mb-4" data-en="The Ultimate Chat App for Teams & Projects" data-ar="أفضل تطبيق دردشة للفرق والمشاريع">The Ultimate Chat App for Teams & Projects</h2>
+  <p class="text-lg mb-6 text-gray-700 max-w-xl mx-auto" data-en="Chats, Calls, and soon AI Tools & Smart Home Controls — available on Mobile, Tablet, Desktop, and Web Browser — all in one secure workspace." data-ar="الدردشات والمكالمات، وقريبًا أدوات الذكاء الاصطناعي والتحكم بالمنزل الذكي – متاح على الجوال، الجهاز اللوحي، الحاسوب، والمتصفح – في مساحة عمل آمنة واحدة.">Chats, Calls, and soon AI Tools & Smart Home Controls — available on Mobile, Tablet, Desktop, and Web Browser — all in one secure workspace.</p>
+<a href="addchat.png" target="_blank" class="bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-500 transition" data-en="Get Started" data-ar="ابدأ الآن">Get Started</a>
+
+</section>
+
+<!-- Features Section -->
+<section id="features" class="py-12 bg-white px-4">
+  <div class="max-w-4xl mx-auto">
+    <h3 class="text-2xl font-bold mb-6 text-center text-indigo-700" data-en="Core Features" data-ar="الميزات الأساسية">Core Features</h3>
+    <ul class="list-disc list-inside text-gray-700 space-y-2">
+      <li data-en="Private 1-on-1 & Group Chats" data-ar="دردشات خاصة وجماعية">Private 1-on-1 & Group Chats</li>
+      <li data-en="Audio & Video Calling" data-ar="مكالمات صوتية ومرئية">Audio & Video Calling</li>
+      <li data-en="Real-time file sharing" data-ar="مشاركة الملفات في الوقت الحقيقي">Real-time file sharing</li>
+      <li data-en="AI-powered task generation" data-ar="توليد المهام باستخدام الذكاء الاصطناعي">AI-powered task generation</li>
+      <li data-en="Smart Home integration" data-ar="دمج مع المنزل الذكي">Smart Home integration</li>
+    </ul>
+  </div>
+</section>
+
+<!-- AI & Smart Home Section -->
+<section id="ai-smart" class="py-16 bg-gray-50 px-4">
+  <div class="max-w-5xl mx-auto">
+    <h3 class="text-2xl font-bold text-center text-indigo-700 mb-6" data-en="AI & Smart Home Integration" data-ar="تكامل الذكاء الاصطناعي والمنزل الذكي">AI & Smart Home Integration</h3>
+    <p class="text-center mb-10 text-gray-700 max-w-3xl mx-auto" data-en="Simplify your team's workflow and home life. Save time and energy so you can focus on what matters." data-ar="بسّط سير عمل فريقك وحياتك المنزلية. وفّر الوقت والطاقة لتركيز على الأمور المهمة.">Simplify your team's workflow and home life. Save time and energy so you can focus on what matters.</p>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white p-6 rounded shadow">
+        <h4 class="text-xl font-semibold mb-3" data-en="AI Toolkit for Teams" data-ar="مجموعة أدوات الذكاء الاصطناعي للفرق">AI Toolkit for Teams</h4>
+        <ul class="list-disc list-inside space-y-2 text-gray-700">
+          <li data-en="Auto-generate tasks from chats" data-ar="توليد المهام تلقائيًا من الدردشات">Auto-generate tasks from chats</li>
+          <li data-en="Summarize meetings instantly" data-ar="تلخيص الاجتماعات فورًا">Summarize meetings instantly</li>
+          <li data-en="Daily to-do checklist + reminders" data-ar="قائمة مهام يومية + تذكيرات">Daily to-do checklist + reminders</li>
+          <li data-en="Monthly goal tracker" data-ar="متابعة الأهداف الشهرية">Monthly goal tracker</li>
+          <li data-en="Built-in GPT assistant per chat" data-ar="مساعد GPT مدمج لكل دردشة">Built-in GPT assistant per chat</li>
+        </ul>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h4 class="text-xl font-semibold mb-3" data-en="Smart Home Management" data-ar="إدارة المنزل الذكي">Smart Home Management</h4>
+        <ul class="list-disc list-inside space-y-2 text-gray-700">
+          <li data-en="Control lights, AC, locks & more" data-ar="التحكم بالإضاءة، التكييف، الأقفال وأكثر">Control lights, AC, locks & more</li>
+          <li data-en="Schedule devices & set triggers" data-ar="جدولة الأجهزة وضبط المحفزات">Schedule devices & set triggers</li>
+          <li data-en="Group control by rooms & scenes" data-ar="التحكم الجماعي بالغرف والمشاهد">Group control by rooms & scenes</li>
+          <li data-en="AI-suggested automations" data-ar="أتمتة مقترحة بواسطة الذكاء الاصطناعي">AI-suggested automations</li>
+          <li data-en="Real-time status & alerts" data-ar="حالة وتنبيهات في الوقت الحقيقي">Real-time status & alerts</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Security Section -->
+<section id="security" class="bg-indigo-50 py-16 px-4">
+  <div class="max-w-4xl mx-auto text-center">
+    <h3 class="text-2xl font-bold text-indigo-700 mb-6" data-en="Quantum-Resonance Secure Identity Model (QRSIM)" data-ar="نموذج الهوية الآمنة بالرنين الكمومي - QRSIM">Quantum-Resonance Secure Identity Model (QRSIM)</h3>
+    <p class="text-gray-700 mb-6" data-en="QuBit-Chat leverages QRSIM to provide unparalleled security through quantum resonance and quantum identity authentication, ensuring your team communications are safe, private, and tamper-proof." data-ar="يستخدم كيوبيت-شات نموذج QRSIM لتوفير أمان لا مثيل له عبر الرنين الكمومي والمصادقة على الهوية الكمومية، مما يضمن أمان وخصوصية وعدم التلاعب في اتصالات فريقك.">QuBit-Chat leverages QRSIM to provide unparalleled security through quantum resonance and quantum identity authentication, ensuring your team communications are safe, private, and tamper-proof.</p>
+  </div>
+</section>
+
+<!-- Why Us Section -->
+<section id="benefits" class="py-16 bg-white px-4">
+  <div class="max-w-5xl mx-auto text-center">
+    <h3 class="text-2xl font-bold text-indigo-700 mb-8" data-en="Why Choose QuBit-Chat?" data-ar="لماذا تختار كيوبيت-شات؟">Why Choose QuBit-Chat?</h3>
+    <div class="grid md:grid-cols-3 gap-10 text-gray-700">
+      <div>
+        <h4 class="font-semibold mb-2" data-en="All-in-One" data-ar="الكل في واحد">All-in-One</h4>
+        <p data-en="Chat, call, manage tasks, control your smart home — seamlessly integrated." data-ar="الدردشة، المكالمات، إدارة المهام، التحكم بالمنزل الذكي — متكامل بسلاسة.">Chat, call, manage tasks, control your smart home — seamlessly integrated.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2" data-en="Quantum Security" data-ar="أمان كمومي">Quantum Security</h4>
+        <p data-en="Next-level security with Quantum Identity Protocol and QRSIM." data-ar="أمان من الطراز التالي مع بروتوكول الهوية الكمومية ونموذج QRSIM.">Next-level security with Quantum Identity Protocol and QRSIM.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2" data-en="AI Smart Automation" data-ar="أتمتة ذكية بالذكاء الاصطناعي">AI Smart Automation</h4>
+        <p data-en="Automate repetitive tasks and smart home controls with AI." data-ar="أتمتة المهام المتكررة والتحكم بالمنزل الذكي باستخدام الذكاء الاصطناعي.">Automate repetitive tasks and smart home controls with AI.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="bg-indigo-600 text-white py-16 px-4">
+  <div class="max-w-3xl mx-auto text-center">
+    <h3 class="text-3xl font-bold mb-6" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</h3>
+    <p class="mb-8" data-en="Ready to get started? Reach out to us for a demo or any questions." data-ar="هل أنت مستعد للبدء؟ تواصل معنا لعرض تجريبي أو أي استفسارات.">Ready to get started? Reach out to us for a demo or any questions.</p>
+    <form class="max-w-xl mx-auto space-y-6" action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-3 rounded text-gray-800" />
+      <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-3 rounded text-gray-800" />
+      <textarea name="message" rows="5" placeholder="Your Message" required class="w-full px-4 py-3 rounded text-gray-800"></textarea>
+      <button type="submit" class="bg-white text-indigo-600 px-8 py-3 rounded font-semibold hover:bg-indigo-100 transition">Send Message</button>
+    </form>
+  </div>
+</section>
+
 <script>
-  // Language toggle script
+  // Language toggle script for demonstration (basic example)
   const langToggle = document.getElementById('langToggle');
   let currentLang = 'en';
   langToggle.addEventListener('click', () => {
     const allElements = document.querySelectorAll('[data-en]');
     if (currentLang === 'en') {
-      allElements.forEach(el => el.textContent = el.getAttribute('data-ar'));
+      allElements.forEach(el => {
+        el.textContent = el.getAttribute('data-ar');
+      });
       langToggle.textContent = 'English';
       document.documentElement.dir = 'rtl';
       currentLang = 'ar';
     } else {
-      allElements.forEach(el => el.textContent = el.getAttribute('data-en'));
+      allElements.forEach(el => {
+        el.textContent = el.getAttribute('data-en');
+      });
       langToggle.textContent = 'العربية';
       document.documentElement.dir = 'ltr';
       currentLang = 'en';
     }
   });
+</script>
 
-  // Hamburger menu toggle script
-  const menuToggle = document.getElementById('menuToggle');
-  const mobileMenu = document.getElementById('mobileMenu');
-  menuToggle.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
+</body>
+</html>
+    <p class="text-gray-700 text-sm md:text-base leading-relaxed" data-en="QuBit-Chat is built upon the innovative Quantum Identity Protocol (QIP) and the groundbreaking Quantum-Resonance Secure Identity Model (QRSIM). Together, they form a novel and promising new approach to Quantum Identity Authentication (QIA), offering state-of-the-art security and identity verification in collaborative digital communication." data-ar="كيوبيت-شات مبني على بروتوكول الهوية الكمومية المبتكر (QIP) ونموذج الهوية الآمنة بالرنين الكمومي الرائد (QRSIM). معاً، يشكلان نهجًا جديدًا واعدًا للمصادقة على الهوية الكمومية (QIA)، مما يوفر أمانًا متقدمًا والتحقق من الهوية في التواصل الرقمي التعاوني.">QuBit-Chat is built upon the innovative <strong>Quantum Identity Protocol (QIP)</strong> and the groundbreaking <strong>Quantum-Resonance Secure Identity Model (QRSIM)</strong>. Together, they form a novel and promising new approach to <strong>Quantum Identity Authentication (QIA)</strong>, offering state-of-the-art security and identity verification in collaborative digital communication.</p>
+  </div>
+</section>
+
+<!-- Hero Section -->
+<section class="text-center py-16 bg-gradient-to-br from-indigo-100 to-white px-4">
+  <h2 class="text-3xl font-bold mb-4" data-en="The Ultimate Chat App for Teams & Projects" data-ar="أفضل تطبيق دردشة للفرق والمشاريع">The Ultimate Chat App for Teams & Projects</h2>
+  <p class="text-lg mb-6 text-gray-700" data-en="Chats, Calls, (Future: AI Tools & Smart Home Controls ) – available on Mobile, Tablet, Desktop, and Web Browser – all in one secure workspace." data-ar="الدردشات والمكالمات (مستقبلًا: أدوات الذكاء الاصطناعي والتحكم بالمنزل الذكي) – متاح على الجوال، الجهاز اللوحي، الحاسوب، والمتصفح – في مساحة عمل آمنة واحدة.">Chats, Calls, (Future: AI Tools & Smart Home Controls ) – available on Mobile, Tablet, Desktop, and Web Browser – all in one secure workspace.</p>
+  <a href="#contact" class="bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-500 transition" data-en="Get Started" data-ar="ابدأ الآن">Get Started</a>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="py-12 bg-white px-4">
+  <div class="max-w-4xl mx-auto">
+    <h3 class="text-2xl font-bold mb-6 text-center text-indigo-700" data-en="Core Features" data-ar="الميزات الأساسية">Core Features</h3>
+    <ul class="list-disc list-inside text-gray-700 space-y-2">
+      <li data-en="Private 1-on-1 & Group Chats" data-ar="دردشات خاصة وجماعية">Private 1-on-1 & Group Chats</li>
+      <li data-en="Audio & Video Calling" data-ar="مكالمات صوتية ومرئية">Audio & Video Calling</li>
+      <li data-en="Real-time file sharing" data-ar="مشاركة الملفات في الوقت الحقيقي">Real-time file sharing</li>
+      <li data-en="AI-powered task generation" data-ar="توليد المهام باستخدام الذكاء الاصطناعي">AI-powered task generation</li>
+      <li data-en="Smart Home integration" data-ar="دمج مع المنزل الذكي">Smart Home integration</li>
+    </ul>
+  </div>
+</section>
+
+<!-- AI & Smart Home Section -->
+<section id="ai-smart" class="py-16 bg-gray-50 px-4">
+  <div class="max-w-5xl mx-auto">
+    <h3 class="text-2xl font-bold text-center text-indigo-700 mb-6" data-en="AI & Smart Home Integration" data-ar="تكامل الذكاء الاصطناعي والمنزل الذكي">AI & Smart Home Integration</h3>
+    <p class="text-center mb-10 text-gray-700 max-w-3xl mx-auto" data-en="Simplify your team's workflow and home life. Save time and energy so you can focus on what matters." data-ar="بسّط سير عمل فريقك وحياتك المنزلية. وفّر الوقت والطاقة لتركيز على الأمور المهمة.">Simplify your team's workflow and home life. Save time and energy so you can focus on what matters.</p>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white p-6 rounded shadow">
+        <h4 class="text-xl font-semibold mb-3" data-en="AI Toolkit for Teams" data-ar="مجموعة أدوات الذكاء الاصطناعي للفرق">AI Toolkit for Teams</h4>
+        <ul class="list-disc list-inside space-y-2 text-gray-700">
+          <li data-en="Auto-generate tasks from chats" data-ar="توليد المهام تلقائيًا من الدردشات">Auto-generate tasks from chats</li>
+          <li data-en="Summarize meetings instantly" data-ar="تلخيص الاجتماعات فورًا">Summarize meetings instantly</li>
+          <li data-en="Daily to-do checklist + reminders" data-ar="قائمة مهام يومية + تذكيرات">Daily to-do checklist + reminders</li>
+          <li data-en="Monthly goal tracker" data-ar="متابعة الأهداف الشهرية">Monthly goal tracker</li>
+          <li data-en="Built-in GPT assistant per chat" data-ar="مساعد GPT مدمج لكل دردشة">Built-in GPT assistant per chat</li>
+        </ul>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h4 class="text-xl font-semibold mb-3" data-en="Smart Home Management" data-ar="إدارة المنزل الذكي">Smart Home Management</h4>
+        <ul class="list-disc list-inside space-y-2 text-gray-700">
+          <li data-en="Control lights, AC, locks & more" data-ar="التحكم بالإضاءة، التكييف، الأقفال وأكثر">Control lights, AC, locks & more</li>
+          <li data-en="'Work Mode' automation" data-ar="أتمتة وضع العمل">"Work Mode" automation</li>
+          <li data-en="Schedule tasks for devices" data-ar="جدولة المهام للأجهزة">Schedule tasks for devices</li>
+          <li data-en="Voice and chat control" data-ar="التحكم بالصوت والدردشة">Voice and chat control</li>
+          <li data-en="Secure home access management" data-ar="إدارة الوصول الآمن للمنزل">Secure home access management</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Security Section -->
+<section id="security" class="py-12 bg-white px-4">
+  <div class="max-w-4xl mx-auto text-center">
+    <h3 class="text-2xl font-bold mb-6 text-indigo-700" data-en="Security and Privacy" data-ar="الأمان والخصوصية">Security and Privacy</h3>
+    <p class="text-gray-700 text-base max-w-3xl mx-auto" data-en="Powered by Quantum Identity Protocol (QIP) and Quantum-Resonance Secure Identity Model (QRSIM), QuBit-Chat ensures unmatched security and privacy for your team communications." data-ar="مدعومًا ببروتوكول الهوية الكمومية (QIP) ونموذج الهوية الآمنة بالرنين الكمومي (QRSIM)، يضمن كيوبيت-شات أمانًا وخصوصية لا مثيل لهما لمحادثات فريقك.">Powered by Quantum Identity Protocol (QIP) and Quantum-Resonance Secure Identity Model (QRSIM), QuBit-Chat ensures unmatched security and privacy for your team communications.</p>
+  </div>
+</section>
+
+<!-- Why Us Section -->
+<section id="benefits" class="py-16 bg-indigo-50 px-4">
+  <div class="max-w-4xl mx-auto text-center">
+    <h3 class="text-2xl font-bold mb-6 text-indigo-700" data-en="Why Choose QuBit-Chat?" data-ar="لماذا تختار كيوبيت-شات؟">Why Choose QuBit-Chat?</h3>
+    <ul class="list-disc list-inside text-gray-700 space-y-2 max-w-xl mx-auto">
+      <li data-en="Seamless collaboration across devices" data-ar="تعاون سلس عبر الأجهزة">Seamless collaboration across devices</li>
+      <li data-en="Future-ready with AI and smart home" data-ar="جاهز للمستقبل مع الذكاء الاصطناعي والمنزل الذكي">Future-ready with AI and smart home</li>
+      <li data-en="Robust, quantum-based security" data-ar="أمان قوي معتمد على الكم">Robust, quantum-based security</li>
+      <li data-en="Intuitive and user-friendly design" data-ar="تصميم سهل الاستخدام وبديهي">Intuitive and user-friendly design</li>
+      <li data-en="Dedicated support & community" data-ar="دعم مخصص ومجتمع">Dedicated support & community</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-12 bg-white px-4">
+  <div class="max-w-3xl mx-auto text-center">
+    <h3 class="text-2xl font-bold mb-6 text-indigo-700" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</h3>
+    <p class="mb-6 text-gray-700" data-en="Questions? Feedback? Reach out to the QuBit-Chat team." data-ar="أسئلة؟ ملاحظات؟ تواصل مع فريق كيوبيت-شات.">Questions? Feedback? Reach out to the QuBit-Chat team.</p>
+    <form class="space-y-4 max-w-md mx-auto" action="#" method="POST">
+      <input type="text" name="name" placeholder="Name" required class="w-full p-3 rounded border border-gray-300" />
+      <input type="email" name="email" placeholder="Email" required class="w-full p-3 rounded border border-gray-300" />
+      <textarea name="message" rows="4" placeholder="Message" required class="w-full p-3 rounded border border-gray-300"></textarea>
+      <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-500 transition">Send</button>
+    </form>
+  </div>
+</section>
+
+<script>
+  // Language toggle example (basic)
+  const langToggle = document.getElementById('langToggle');
+  let isArabic = false;
+  langToggle.addEventListener('click', () => {
+    isArabic = !isArabic;
+    document.documentElement.dir = isArabic ? 'rtl' : 'ltr';
+    document.documentElement.lang = isArabic ? 'ar' : 'en';
+    langToggle.textContent = isArabic ? 'English' : 'العربية';
+
+    document.querySelectorAll('[data-en]').forEach(el => {
+      el.textContent = isArabic ? el.getAttribute('data-ar') : el.getAttribute('data-en');
+    });
   });
 </script>
 
 </body>
 </html>
+
