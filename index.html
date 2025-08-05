@@ -3,167 +3,145 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TeamWork Chat</title>
+  <title>QuBit-Chat</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['ui-sans-serif', 'system-ui'],
-          }
-        }
-      }
-    };
-  </script>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
 
 <!-- Header -->
 <header class="bg-white shadow-md p-4 md:p-6">
-  <div class="container mx-auto flex justify-between items-center">
-    <h1 class="text-xl md:text-2xl font-bold text-indigo-600" data-en="TeamWork Chat" data-ar="دردشة فريق العمل">TeamWork Chat</h1>
-    <button id="menuToggle" class="md:hidden text-indigo-600 text-xl">&#9776;</button>
-    <nav id="mainNav" class="hidden md:flex flex-col md:flex-row md:space-x-6 rtl:space-x-reverse md:items-center absolute md:static top-16 left-0 w-full bg-white md:w-auto md:bg-transparent p-4 md:p-0 z-50">
-      <a href="#features" data-en="Features" data-ar="الميزات" class="hover:text-indigo-500 block py-2">Features</a>
-      <a href="#ai-smart" data-en="AI & Smart Home" data-ar="الذكاء الاصطناعي والمنزل الذكي" class="hover:text-indigo-500 block py-2">AI & Smart Home</a>
-      <a href="#security" data-en="Security" data-ar="الأمان" class="hover:text-indigo-500 block py-2">Security</a>
-      <a href="#benefits" data-en="Why Us" data-ar="لماذا نحن؟" class="hover:text-indigo-500 block py-2">Why Us</a>
-      <a href="#contact" data-en="Contact" data-ar="اتصل بنا" class="hover:text-indigo-500 block py-2">Contact</a>
-      <button id="langToggle" class="mt-2 md:mt-0 md:ml-4 px-4 py-2 border border-indigo-600 text-indigo-600 rounded hover:bg-indigo-100">العربية</button>
-    </nav>
+  <div class="container mx-auto flex flex-wrap items-center justify-between">
+    <img src="logo.png" alt="QuBit Chat Logo" class="h-10 w-10 md:h-12 md:w-12" />
+    <h1 class="text-xl md:text-2xl font-bold text-indigo-600 mx-auto text-center">QuBit-Chat</h1>
+    <button id="langToggle" class="px-4 py-2 border border-indigo-600 text-indigo-600 rounded hover:bg-indigo-100">العربية</button>
   </div>
+  <nav class="flex justify-center flex-wrap mt-4 space-x-4 rtl:space-x-reverse">
+    <a href="#features" class="hover:text-indigo-500">Features</a>
+    <a href="#ai-smart" class="hover:text-indigo-500">AI & Smart Home</a>
+    <a href="#security" class="hover:text-indigo-500">Security</a>
+    <a href="#benefits" class="hover:text-indigo-500">Why Us</a>
+    <a href="#contact" class="hover:text-indigo-500">Contact</a>
+  </nav>
 </header>
 
+<!-- Intellectual Property -->
+<section class="bg-indigo-50 py-10 px-4">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-2xl font-semibold text-indigo-700 mb-4">Quantum Identity Protocol - QIP</h2>
+    <p class="text-gray-700 leading-relaxed">
+      QuBit-Chat is built upon the innovative <strong>Quantum Identity Protocol (QIP)</strong> and the groundbreaking <strong>Quantum-Resonance Secure Identity Model (QRSIM)</strong>.
+      Together, they form a novel and promising new approach to <strong>Quantum Identity Authentication (QIA)</strong>, offering next-gen security and verification in digital communication.
+    </p>
+  </div>
+</section>
+
 <!-- Hero Section -->
-<section class="text-center py-16 md:py-20 bg-gradient-to-br from-indigo-100 to-white">
-  <div class="container mx-auto px-4">
-    <h2 class="text-2xl md:text-4xl font-bold mb-4" data-en="The Ultimate Chat App for Teams & Projects" data-ar="أفضل تطبيق دردشة مخصص للفرق والمشاريع">The Ultimate Chat App for Teams & Projects</h2>
-    <p class="text-base md:text-lg mb-6 text-gray-700" data-en="Chats, Calls, AI Tools & Smart Home Controls – all in one secure workspace for developers, project managers, and connected teams." data-ar="الدردشات والمكالمات وأدوات الذكاء الاصطناعي والتحكم بالمنزل الذكي – كل ذلك في مساحة عمل آمنة واحدة للمطورين ومديري المشاريع.">Chats, Calls, AI Tools & Smart Home Controls – all in one secure workspace for developers, project managers, and connected teams.</p>
-    <a href="#contact" class="bg-indigo-600 text-white px-5 py-2 rounded-xl hover:bg-indigo-500 transition" data-en="Get Started" data-ar="ابدأ الآن">Get Started</a>
+<section class="text-center py-16 bg-gradient-to-br from-indigo-100 to-white px-4">
+  <h2 class="text-3xl font-bold mb-4">The Ultimate Chat App for Teams & Projects</h2>
+  <p class="text-lg mb-6 text-gray-700">Chats, Calls, AI Tools & Smart Home Controls – all in one secure workspace.</p>
+  <a href="#contact" class="bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-500 transition">Get Started</a>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="py-12 bg-white px-4">
+  <div class="max-w-4xl mx-auto">
+    <h3 class="text-2xl font-bold mb-6 text-center text-indigo-700">Core Features</h3>
+    <ul class="list-disc list-inside text-gray-700 space-y-2">
+      <li>Private 1-on-1 & Group Chats</li>
+      <li>Audio & Video Calling</li>
+      <li>Real-time file sharing</li>
+      <li>AI-powered task generation</li>
+      <li>Smart Home integration</li>
+    </ul>
   </div>
 </section>
 
-<!-- Features -->
-<section id="features" class="py-14 bg-gray-100">
-  <div class="container mx-auto px-4">
-    <h3 class="text-2xl md:text-3xl font-bold text-center text-indigo-700 mb-8" data-en="Key Features" data-ar="الميزات الرئيسية">Key Features</h3>
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="bg-white p-5 rounded-xl shadow text-sm md:text-base">
-        <h4 class="font-semibold mb-2" data-en="Private & Group Chat" data-ar="دردشة خاصة وجماعية">Private & Group Chat</h4>
-        <p data-en="Communicate securely with your team in organized channels or private messages." data-ar="تواصل بأمان مع فريقك من خلال قنوات منظمة أو رسائل خاصة."></p>
-      </div>
-      <div class="bg-white p-5 rounded-xl shadow text-sm md:text-base">
-        <h4 class="font-semibold mb-2" data-en="Video & Audio Calls" data-ar="مكالمات صوتية ومرئية">Video & Audio Calls</h4>
-        <p data-en="High-quality calls with screen sharing and recording features." data-ar="مكالمات بجودة عالية مع مشاركة الشاشة وميزة التسجيل."></p>
-      </div>
-      <div class="bg-white p-5 rounded-xl shadow text-sm md:text-base">
-        <h4 class="font-semibold mb-2" data-en="Daily Tasks & Goals" data-ar="مهام يومية وأهداف">Daily Tasks & Goals</h4>
-        <p data-en="Stay productive with to-do lists and monthly targets." data-ar="ابق منتجًا من خلال قوائم المهام والأهداف الشهرية."></p>
-      </div>
-      <div class="bg-white p-5 rounded-xl shadow text-sm md:text-base">
-        <h4 class="font-semibold mb-2" data-en="Smart Home Controls" data-ar="التحكم في المنزل الذكي">Smart Home Controls</h4>
-        <p data-en="Manage lights, AC, and devices directly from chat." data-ar="تحكم في الإضاءة والتكييف والأجهزة من داخل المحادثة."></p>
-      </div>
-      <div class="bg-white p-5 rounded-xl shadow text-sm md:text-base">
-        <h4 class="font-semibold mb-2" data-en="Built-in AI Assistant" data-ar="مساعد ذكي مدمج">Built-in AI Assistant</h4>
-        <p data-en="Auto-generate tasks, summarize meetings, and more." data-ar="إنشاء مهام تلقائيًا، تلخيص الاجتماعات، والمزيد."></p>
-      </div>
-      <div class="bg-white p-5 rounded-xl shadow text-sm md:text-base">
-        <h4 class="font-semibold mb-2" data-en="Multi-device Access" data-ar="الوصول من عدة أجهزة">Multi-device Access</h4>
-        <p data-en="Access from web, mobile, or desktop apps." data-ar="الوصول من الويب أو الجوال أو تطبيقات الحاسوب."></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- AI & Smart Home -->
-<section id="ai-smart" class="py-14 bg-white">
-  <div class="container mx-auto px-4">
-    <h3 class="text-2xl md:text-3xl font-bold text-center text-indigo-700 mb-6" data-en="AI & Smart Home Integration" data-ar="الذكاء الاصطناعي والمنزل الذكي">AI & Smart Home Integration</h3>
-    <div class="grid md:grid-cols-2 gap-6 text-sm md:text-base">
-      <div class="bg-indigo-50 p-5 rounded-xl shadow">
-        <h4 class="font-semibold mb-3" data-en="AI Toolkit for Teams" data-ar="أدوات الذكاء الاصطناعي للفرق">AI Toolkit for Teams</h4>
-        <ul class="list-disc list-inside space-y-1 text-gray-700">
-          <li data-en="Auto-generate tasks from chat" data-ar="إنشاء المهام تلقائيًا من المحادثة"></li>
-          <li data-en="Summarize long meetings instantly" data-ar="تلخيص الاجتماعات الطويلة فورًا"></li>
-          <li data-en="To-do checklists with reminders" data-ar="قوائم المهام مع التذكير"></li>
-          <li data-en="Monthly goal tracking" data-ar="تتبع الأهداف الشهرية"></li>
-          <li data-en="Built-in assistant in every thread" data-ar="مساعد ذكي مدمج بكل محادثة"></li>
+<!-- AI & Smart Home Section -->
+<section id="ai-smart" class="py-16 bg-gray-50 px-4">
+  <div class="max-w-5xl mx-auto">
+    <h3 class="text-2xl font-bold text-center text-indigo-700 mb-6">AI & Smart Home Integration</h3>
+    <p class="text-center mb-10 text-gray-700 max-w-3xl mx-auto">
+      Simplify your team's workflow and home life. Save time and energy so you can focus on what matters.
+    </p>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white p-6 rounded shadow">
+        <h4 class="text-xl font-semibold mb-3">AI Toolkit for Teams</h4>
+        <ul class="list-disc list-inside space-y-2 text-gray-700">
+          <li>Auto-generate tasks from chats</li>
+          <li>Summarize meetings instantly</li>
+          <li>Daily to-do checklist + reminders</li>
+          <li>Monthly goal tracker</li>
+          <li>Built-in GPT assistant per chat</li>
         </ul>
       </div>
-      <div class="bg-indigo-50 p-5 rounded-xl shadow">
-        <h4 class="font-semibold mb-3" data-en="Smart Home Management" data-ar="إدارة المنزل الذكي">Smart Home Management</h4>
-        <ul class="list-disc list-inside space-y-1 text-gray-700">
-          <li data-en="Control lights, AC, locks & more" data-ar="تحكم في الإضاءة، التكييف، الأقفال والمزيد"></li>
-          <li data-en="Voice assistant & automation routines" data-ar="مساعد صوتي وروتينات أوتوماتيكية"></li>
-          <li data-en="'Work Mode' to reduce distractions" data-ar="وضع العمل لتقليل المشتتات"></li>
-          <li data-en="User permissions for each device" data-ar="صلاحيات المستخدم لكل جهاز"></li>
+      <div class="bg-white p-6 rounded shadow">
+        <h4 class="text-xl font-semibold mb-3">Smart Home Management</h4>
+        <ul class="list-disc list-inside space-y-2 text-gray-700">
+          <li>Control lights, AC, locks & more</li>
+          <li>'Work Mode' setup for focus</li>
+          <li>Voice assistant & automations</li>
+          <li>Device-based user permissions</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Security -->
-<section id="security" class="py-14 bg-gray-100">
-  <div class="container mx-auto px-4">
-    <h3 class="text-2xl md:text-3xl font-bold text-center text-indigo-700 mb-6" data-en="Enterprise-Grade Security" data-ar="أمان بدرجة المؤسسات">Enterprise-Grade Security</h3>
-    <ul class="list-disc list-inside max-w-xl mx-auto space-y-2 text-sm md:text-base text-gray-700">
-      <li data-en="End-to-end encryption" data-ar="تشفير من الطرف للطرف"></li>
-      <li data-en="Two-factor authentication" data-ar="التحقق بخطوتين"></li>
-      <li data-en="Role-based access control" data-ar="تحكم بالوصول حسب الدور"></li>
-      <li data-en="GDPR & SOC 2 compliance" data-ar="الامتثال لـ GDPR و SOC 2"></li>
+<!-- Security Section -->
+<section id="security" class="py-16 bg-white px-4">
+  <div class="max-w-4xl mx-auto text-center">
+    <h3 class="text-2xl font-bold text-indigo-700 mb-4">Enterprise-Grade Security</h3>
+    <p class="mb-6 text-gray-700">Built with enterprise-class encryption, identity protection, and access control.</p>
+    <ul class="list-disc list-inside text-gray-700 space-y-2 text-left max-w-md mx-auto">
+      <li>End-to-end encryption</li>
+      <li>Two-factor authentication</li>
+      <li>Role-based access controls</li>
+      <li>GDPR & SOC 2 compliance</li>
     </ul>
   </div>
 </section>
 
-<!-- Why Us -->
-<section id="benefits" class="py-14 bg-white">
-  <div class="container mx-auto px-4">
-    <h3 class="text-2xl md:text-3xl font-bold text-center text-indigo-700 mb-6" data-en="Why Choose Us?" data-ar="لماذا نحن؟">Why Choose Us?</h3>
-    <ul class="list-disc list-inside max-w-2xl mx-auto space-y-2 text-sm md:text-base text-gray-700">
-      <li data-en="Built for project-focused teams" data-ar="مصمم خصيصًا لفرق المشاريع"></li>
-      <li data-en="AI and automation included" data-ar="الذكاء الاصطناعي والأتمتة مدمجة"></li>
-      <li data-en="Smart home support for hybrid work" data-ar="دعم المنزل الذكي للعمل الهجين"></li>
-      <li data-en="Privacy-first, ad-free experience" data-ar="تجربة خالية من الإعلانات وخصوصية عالية"></li>
+<!-- Why Us Section -->
+<section id="benefits" class="py-16 bg-gray-50 px-4">
+  <div class="max-w-4xl mx-auto text-center">
+    <h3 class="text-2xl font-bold text-indigo-700 mb-6">Why Choose QuBit-Chat?</h3>
+    <ul class="list-disc list-inside space-y-2 text-gray-700 text-left max-w-md mx-auto">
+      <li>Engineered for teams and projects</li>
+      <li>Integrated AI and automation tools</li>
+      <li>Smart home connectivity for hybrid work</li>
+      <li>No ads, no distractions – just focus</li>
     </ul>
   </div>
 </section>
 
-<!-- Contact -->
-<section id="contact" class="py-16 bg-indigo-600 text-white text-center">
-  <div class="container mx-auto px-4">
-    <h3 class="text-2xl md:text-3xl font-bold mb-3" data-en="Ready to Collaborate Smarter?" data-ar="هل أنت مستعد للتعاون الذكي؟">Ready to Collaborate Smarter?</h3>
-    <p class="mb-6" data-en="Try TeamWork Chat and empower your team today." data-ar="جرّب TeamWork Chat وامنح فريقك القوة الآن.">Try TeamWork Chat and empower your team today.</p>
-    <a href="#" class="bg-white text-indigo-600 px-6 py-2 rounded font-semibold hover:bg-gray-200 transition" data-en="Book a Demo" data-ar="احجز عرضًا تجريبيًا">Book a Demo</a>
-  </div>
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-indigo-600 text-white text-center px-4">
+  <h3 class="text-2xl font-bold mb-4">Get in Touch</h3>
+  <p class="mb-6">Try QuBit-Chat and experience collaboration without chaos.</p>
+  <a href="#" class="bg-white text-indigo-600 px-6 py-3 rounded font-semibold hover:bg-gray-200 transition">Book a Demo</a>
 </section>
 
 <!-- Footer -->
-<footer class="bg-gray-900 text-white text-center py-4">
-  <p data-en="© 2025 TeamWork Chat. All rights reserved." data-ar="© 2025 دردشة فريق العمل. جميع الحقوق محفوظة.">© 2025 TeamWork Chat. All rights reserved.</p>
+<footer class="bg-gray-900 text-white text-center py-6">
+  <p>© 2025 QuBit-Chat. All rights reserved.</p>
 </footer>
 
-<!-- Language & Mobile Menu Scripts -->
+<!-- Language Toggle Script -->
 <script>
   const toggleBtn = document.getElementById('langToggle');
-  const nav = document.getElementById('mainNav');
-  const menuBtn = document.getElementById('menuToggle');
   let currentLang = 'en';
-
-  toggleBtn.addEventListener('click', () => {
-    currentLang = currentLang === 'en' ? 'ar' : 'en';
-    document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
-    document.body.style.textAlign = currentLang === 'ar' ? 'right' : 'left';
-    toggleBtn.textContent = currentLang === 'ar' ? 'English' : 'العربية';
+  function switchLanguage(lang) {
+    document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+    document.body.style.textAlign = (lang === 'ar') ? 'right' : 'left';
     document.querySelectorAll('[data-en]').forEach(el => {
-      el.textContent = el.getAttribute(`data-${currentLang}`);
+      const newText = el.getAttribute(`data-${lang}`);
+      if (newText) el.textContent = newText;
     });
-  });
-
-  menuBtn.addEventListener('click', () => {
-    nav.classList.toggle('hidden');
+    toggleBtn.textContent = (lang === 'ar') ? 'English' : 'العربية';
+    currentLang = lang;
+  }
+  toggleBtn.addEventListener('click', () => {
+    switchLanguage(currentLang === 'en' ? 'ar' : 'en');
   });
 </script>
 
