@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>QuBit-Chat</title>
+  <title>QuBit Chat - Team Collaboration</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
@@ -12,28 +12,66 @@
 <header class="bg-white shadow-md p-4 md:p-6">
   <div class="container mx-auto flex flex-wrap items-center justify-between">
     <img src="logo.png" alt="QuBit Chat Logo" class="h-10 w-10 md:h-12 md:w-12" />
-    <h1 class="text-xl md:text-2xl font-bold text-indigo-600 mx-auto text-center">QuBit-Chat</h1>
+    <div class="mx-auto text-center">
+      <h1 class="text-xl md:text-2xl font-bold text-indigo-600">QuBit-Chat</h1>
+      <p class="text-sm text-gray-500">Team T-T Touch</p>
+    </div>
     <button id="langToggle" class="px-4 py-2 border border-indigo-600 text-indigo-600 rounded hover:bg-indigo-100">العربية</button>
   </div>
-  <nav class="flex justify-center flex-wrap mt-4 space-x-4 rtl:space-x-reverse">
-    <a href="#features" class="hover:text-indigo-500">Features</a>
-    <a href="#ai-smart" class="hover:text-indigo-500">AI & Smart Home</a>
-    <a href="#security" class="hover:text-indigo-500">Security</a>
-    <a href="#benefits" class="hover:text-indigo-500">Why Us</a>
-    <a href="#contact" class="hover:text-indigo-500">Contact</a>
+  <nav class="flex flex-wrap justify-center space-x-4 mt-4 rtl:space-x-reverse">
+    <a href="#features" class="hover:text-indigo-500 block py-2">Features</a>
+    <a href="#ai-smart" class="hover:text-indigo-500 block py-2">AI & Smart Home</a>
+    <a href="#security" class="hover:text-indigo-500 block py-2">Security</a>
+    <a href="#benefits" class="hover:text-indigo-500 block py-2">Why Us</a>
+    <a href="#contact" class="hover:text-indigo-500 block py-2">Contact</a>
   </nav>
 </header>
 
-<!-- Intellectual Property -->
+<!-- Intellectual Property Section -->
 <section class="bg-indigo-50 py-10 px-4">
   <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-2xl font-semibold text-indigo-700 mb-4">Quantum Identity Protocol - QIP</h2>
-    <p class="text-gray-700 leading-relaxed">
+    <h2 class="text-xl md:text-2xl font-semibold text-indigo-700 mb-4">Quantum Identity Protocol - QIP</h2>
+    <p class="text-gray-700 text-sm md:text-base leading-relaxed">
       QuBit-Chat is built upon the innovative <strong>Quantum Identity Protocol (QIP)</strong> and the groundbreaking <strong>Quantum-Resonance Secure Identity Model (QRSIM)</strong>.
-      Together, they form a novel and promising new approach to <strong>Quantum Identity Authentication (QIA)</strong>, offering next-gen security and verification in digital communication.
+      Together, they form a novel and promising new approach to <strong>Quantum Identity Authentication (QIA)</strong>, offering state-of-the-art security and identity verification
+      in collaborative digital communication.
     </p>
   </div>
 </section>
+
+<!-- Placeholder Main Content -->
+<section class="py-14 text-center">
+  <div class="container mx-auto px-4">
+    <p class="text-gray-500">[Remaining website content continues here: Features, AI & Smart Home, Security, Why Us, Contact, etc.]</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white text-center py-4">
+  <p>© 2025 QuBit Chat. All rights reserved.</p>
+</footer>
+
+<!-- Language Toggle Script -->
+<script>
+  const toggleBtn = document.getElementById('langToggle');
+  let currentLang = 'en';
+  function switchLanguage(lang) {
+    document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+    document.body.style.textAlign = (lang === 'ar') ? 'right' : 'left';
+    document.querySelectorAll('[data-en]').forEach(el => {
+      const newText = el.getAttribute(`data-${lang}`);
+      if (newText) el.textContent = newText;
+    });
+    toggleBtn.textContent = (lang === 'ar') ? 'English' : 'العربية';
+    currentLang = lang;
+  }
+  toggleBtn.addEventListener('click', () => {
+    switchLanguage(currentLang === 'en' ? 'ar' : 'en');
+  });
+</script>
+
+</body>
+</html>
 
 <!-- Hero Section -->
 <section class="text-center py-16 bg-gradient-to-br from-indigo-100 to-white px-4">
@@ -147,3 +185,4 @@
 
 </body>
 </html>
+
