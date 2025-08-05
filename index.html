@@ -39,6 +39,123 @@
   </div>
 </section>
 
+<!-- Hero Section -->
+<section class="text-center py-16 bg-gradient-to-br from-indigo-100 to-white px-4">
+  <h2 class="text-3xl font-bold mb-4" data-en="The Ultimate Chat App for Teams & Projects" data-ar="أفضل تطبيق دردشة للفرق والمشاريع">The Ultimate Chat App for Teams & Projects</h2>
+  <p class="text-lg mb-6 text-gray-700" data-en="Chats, Calls, (Future: AI Tools & Smart Home Controls ) – available on Mobile, Tablet, Desktop, and Web Browser – all in one secure workspace." data-ar="الدردشات والمكالمات (مستقبلًا: أدوات الذكاء الاصطناعي والتحكم بالمنزل الذكي) – متاح على الجوال، الجهاز اللوحي، الحاسوب، والمتصفح – في مساحة عمل آمنة واحدة.">Chats, Calls, (Future: AI Tools & Smart Home Controls ) – available on Mobile, Tablet, Desktop, and Web Browser – all in one secure workspace.</p>
+  <a href="#contact" class="bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-500 transition" data-en="Get Started" data-ar="ابدأ الآن">Get Started</a>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="py-12 bg-white px-4">
+  <div class="max-w-4xl mx-auto">
+    <h3 class="text-2xl font-bold mb-6 text-center text-indigo-700">Core Features</h3>
+    <ul class="list-disc list-inside text-gray-700 space-y-2">
+      <li>Private 1-on-1 & Group Chats</li>
+      <li>Audio & Video Calling</li>
+      <li>Real-time file sharing</li>
+      <li>AI-powered task generation</li>
+      <li>Smart Home integration</li>
+    </ul>
+  </div>
+</section>
+
+<!-- AI & Smart Home Section -->
+<section id="ai-smart" class="py-16 bg-gray-50 px-4">
+  <div class="max-w-5xl mx-auto">
+    <h3 class="text-2xl font-bold text-center text-indigo-700 mb-6">AI & Smart Home Integration</h3>
+    <p class="text-center mb-10 text-gray-700 max-w-3xl mx-auto">
+      Simplify your team's workflow and home life. Save time and energy so you can focus on what matters.
+    </p>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white p-6 rounded shadow">
+        <h4 class="text-xl font-semibold mb-3">AI Toolkit for Teams</h4>
+        <ul class="list-disc list-inside space-y-2 text-gray-700">
+          <li>Auto-generate tasks from chats</li>
+          <li>Summarize meetings instantly</li>
+          <li>Daily to-do checklist + reminders</li>
+          <li>Monthly goal tracker</li>
+          <li>Built-in GPT assistant per chat</li>
+        </ul>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h4 class="text-xl font-semibold mb-3">Smart Home Management</h4>
+        <ul class="list-disc list-inside space-y-2 text-gray-700">
+          <li>Control lights, AC, locks & more</li>
+          <li>'Work Mode' setup for focus</li>
+          <li>Voice assistant & automations</li>
+          <li>Device-based user permissions</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Security Section -->
+<section id="security" class="py-16 bg-white px-4">
+  <div class="max-w-4xl mx-auto text-center">
+    <h3 class="text-2xl font-bold text-indigo-700 mb-4">Enterprise-Grade Security</h3>
+    <p class="mb-6 text-gray-700">Built with enterprise-class encryption, identity protection, and access control.</p>
+    <ul class="list-disc list-inside text-gray-700 space-y-2 text-left max-w-md mx-auto">
+      <li>End-to-end encryption</li>
+      <li>Two-factor authentication</li>
+      <li>Role-based access controls</li>
+      <li>GDPR & SOC 2 compliance</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Why Us Section -->
+<section id="benefits" class="py-16 bg-gray-50 px-4">
+  <div class="max-w-4xl mx-auto text-center">
+    <h3 class="text-2xl font-bold text-indigo-700 mb-6">Why Choose QuBit-Chat?</h3>
+    <ul class="list-disc list-inside space-y-2 text-gray-700 text-left max-w-md mx-auto">
+      <li>Engineered for teams and projects</li>
+      <li>Integrated AI and automation tools</li>
+      <li>Smart home connectivity for hybrid work</li>
+      <li>No ads, no distractions – just focus</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-indigo-600 text-white text-center px-4">
+  <h3 class="text-2xl font-bold mb-4">Get in Touch</h3>
+  <p class="mb-6">Try QuBit-Chat and experience collaboration without chaos.</p>
+  <a href="#" class="bg-white text-indigo-600 px-6 py-3 rounded font-semibold hover:bg-gray-200 transition">Book a Demo</a>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white text-center py-6">
+  <p>© 2025 QuBit-Chat. All rights reserved.</p>
+</footer>
+
+<!-- Language Toggle Script -->
+<script>
+  const toggleBtn = document.getElementById('langToggle');
+  let currentLang = 'en';
+  function switchLanguage(lang) {
+    document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+    document.body.style.textAlign = (lang === 'ar') ? 'right' : 'left';
+    document.querySelectorAll('[data-en]').forEach(el => {
+      const newText = el.getAttribute(`data-${lang}`);
+      if (newText) el.textContent = newText;
+    });
+    toggleBtn.textContent = (lang === 'ar') ? 'English' : 'العربية';
+    currentLang = lang;
+  }
+  toggleBtn.addEventListener('click', () => {
+    switchLanguage(currentLang === 'en' ? 'ar' : 'en');
+  });
+</script>
+
+</body>
+</html>
+      in collaborative digital communication.
+    </p>
+  </div>
+</section>
+
 <!-- Placeholder Main Content -->
 <section class="py-14 text-center">
   <div class="container mx-auto px-4">
@@ -185,4 +302,5 @@
 
 </body>
 </html>
+
 
